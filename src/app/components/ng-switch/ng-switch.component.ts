@@ -8,22 +8,45 @@ import { element } from '@angular/core/src/render3';
 })
 export class NgSwitchComponent implements OnInit {
 
-  alerta:string[] =[
+  alertas:string[] =[
     'primary',
     'secondary',
     'warning',
     'info',
     'something'
   ];
+  alerta:string;
+  index:number = 0;
+  alertaButton:string = "btn-danger"
+  
 
-  constructor() { }
+  constructor() {
+    this.alerta = this.alertas[0];
+    
+    
+   }
+
+   
+   
 
   ngOnInit() {
   }
 
-  cambiarLabel(){
-  let i =0
+  cambiarLabel() {
+    this.index++;
+    if (this.index > (this.alertas.length - 1)) {
+      this.index = 0;
+    }
+    this.alerta = this.alertas[this.index]
+    // console.log(this.alerta, this.index);
+    this.alertaButton = "btn-" + this.alerta;
+     
+  }
 
-}
+ 
+ 
+  
+  
+  
 }
 
