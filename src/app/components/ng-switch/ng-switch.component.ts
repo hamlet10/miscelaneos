@@ -8,26 +8,26 @@ import { element } from '@angular/core/src/render3';
 })
 export class NgSwitchComponent implements OnInit {
 
-  alertas:string[] =[
+  alertas: string[] = [
     'primary',
     'secondary',
     'warning',
     'info',
     'something'
   ];
-  alerta:string;
-  index:number = 0;
-  alertaButton:string = "btn-danger"
-  
+  alerta: string;
+  index: number = 0;
+  alertaButton: string = "btn-danger"
+
 
   constructor() {
     this.alerta = this.alertas[0];
-    
-    
-   }
 
-   
-   
+
+  }
+
+
+
 
   ngOnInit() {
   }
@@ -40,13 +40,9 @@ export class NgSwitchComponent implements OnInit {
     this.alerta = this.alertas[this.index]
     // console.log(this.alerta, this.index);
     this.alertaButton = "btn-" + this.alerta;
-     
+
   }
 
- 
- 
-  
-  
-  
+
 }
 
