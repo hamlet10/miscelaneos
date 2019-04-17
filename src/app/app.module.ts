@@ -10,7 +10,7 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { HomeComponent } from './components/home/home.component';
 import { app_routing  } from "./app.routes";
 import { UsuarioComponent } from './components/usuario/usuario.component';
-import { UsuarioNuevoComponent } from './components/usuario-nuevo.component';
+import { UsuarioNuevoComponent } from './components/usuario/usuario-nuevo.component';
 import { UsuarioEditarComponent } from './components/usuario/usuario-editar.component';
 import { UsuarioDetalleComponent } from './components/usuario/usuario-detalle.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
